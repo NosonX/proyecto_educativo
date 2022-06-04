@@ -1,78 +1,68 @@
 /* General */
 body {
     margin: 0;
-    padding: 0;
     display: flex;
-    min-height: 100vh;
     font-family: 'Roboto', sans-serif;
-    font-size: 16px;
+}
+
+h1 {
+    font-size: 48px;
+    text-align: center;
+}
+
+h3 {
+    font-size: 20px;
+    font-weight: 300;
 }
 
 
 /* Layout */
-aside, main {
-    padding: 2em;
-    box-sizing: border-box;
-}
 
 aside {
     background-color: #00315F;
-    width: 300px;
-    height: 100vh;
-    color: white;
     border-top-right-radius: 100px;
+    box-sizing: border-box;
+    color: white;
+    width: 300px;
+    flex-shrink: 0;
+    height: 100vh;
+    padding: 32px;
     position: relative;
 }
 
-.section-header {
-    color: red!important;
-}
-
 main {
-    flex-grow: 1;
+    width: 100%;
 }
 
 
-/* Helpers */
-.brand {
-    font-size: 48px;
-    text-align: center;
-}
-.font-light {
-    font-weight: 300;
-    opacity: 0.7;
+/* Aside */
+
+aside .field {
+    margin-left: 32px;
 }
 
-/* Sidenav */
-.filter-group h3 {
-    font-size: 20px;
-    font-weight: 400;
-}
-
-.filter-group form {
-    font-size: 16px;
-    padding-left: 2em;
-}
-
-.filter-group form .field {
+aside .field--number {
     display: flex;
-    margin-bottom: 1em;
     justify-content: space-between;
 }
 
-.filter-group form .field label {
+aside .field--number label {
     display: block;
+    width: 120px;
+    font-weight: 300;
 }
 
-.filter-group form .field input {
+aside .field--number input {
     width: 50px;
-    display: block;
 }
 
 .submit {
-    position: absolute;
-    bottom: 1em;
-    width: calc(240px - 1em);
+    background-color: #A4C549;
+    border-radius: 5px;
+    border: none;
+    width: calc(100% - (32px * 2));
     height: 36px;
-    background-color: lime;
+    position: absolute;
+    left: 32px;
+    bottom: 32px;
 }
