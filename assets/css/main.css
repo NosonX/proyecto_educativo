@@ -1,13 +1,18 @@
+/* General */
 body {
     margin: 0;
     padding: 0;
     display: flex;
     min-height: 100vh;
     font-family: 'Roboto', sans-serif;
+    font-size: 16px;
 }
 
+
+/* Layout */
 aside, main {
     padding: 2em;
+    box-sizing: border-box;
 }
 
 aside {
@@ -16,6 +21,7 @@ aside {
     height: 100vh;
     color: white;
     border-top-right-radius: 100px;
+    position: relative;
 }
 
 .section-header {
@@ -24,4 +30,49 @@ aside {
 
 main {
     flex-grow: 1;
+}
+
+
+/* Helpers */
+.brand {
+    font-size: 48px;
+    text-align: center;
+}
+.font-light {
+    font-weight: 300;
+    opacity: 0.7;
+}
+
+/* Sidenav */
+.filter-group h3 {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.filter-group form {
+    font-size: 16px;
+    padding-left: 2em;
+}
+
+.filter-group form .field {
+    display: flex;
+    margin-bottom: 1em;
+    justify-content: space-between;
+}
+
+.filter-group form .field label {
+    display: block;
+}
+
+.filter-group form .field input {
+    width: 50px;
+    display: block;
+}
+
+.submit {
+    position: absolute;
+    bottom: 1em;
+    width: calc(240px - 1em);
+    height: 36px;
+    background-color: lime;
 }
