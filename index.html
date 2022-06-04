@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduMat</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <aside>
+        <h1 class="brand">EDUMAT</h1>
+
+        <div class="form-group">
+            <h3>Tipos de ejercicios</h3>
+            <form>
+                <div class="checkbox">
+                    <input name="sumas" type="checkbox" />
+                    <label for="sumas">Sumas</label>
+                </div>
+                <div class="checkbox">
+                    <input name="sumas" type="checkbox" />
+                    <label for="sumas">Restas</label>
+                </div>
+                <div class="checkbox">
+                    <input name="sumas" type="checkbox" />
+                    <label for="sumas">Multiplicaciones</label>
+                </div>
+                <div class="checkbox">
+                    <input name="sumas" type="checkbox" />
+                    <label for="sumas">Divisiones</label>
+                </div>
+            </form>
+        </div>
+
+        <div class="form-group">
+            <h3>Configuraciones</h3>
+            <form>
+                <div class="field">
+                    <label for="nEjercicios">Nº de ejercicios</label>
+                    <input name="nEjercicios" type="number" />
+                </div>
+                <div class="field">
+                    <label for="min">Nº min</label>
+                    <input name="min" type="number" />
+                </div>
+                <div class="field">
+                    <label for="max">Nº max</label>
+                    <input name="max" type="number" />
+                </div>
+            </form>
+
+            <button>Generar prueba</button>
+        </div>
+    </aside>
+
+    <main>
+        <section>
+            <div class="section-header">
+                <h2>Sumas</h2>
+                <span>+</span>
+                <hr>
+            </div>
+            <article>
+                <div class="excercise">
+                    <span>10</span>
+                    <span>x</span>
+                    <span>
+                        <input type="number">
+                    </span>
+                    <span>= 20</span>
+                </div>
+            </article>
+        </section>
+        <button>Calificar</button>
+    </main>
+    <script src="assets/js/main.js" type="text/javascript"></script>
+</body>
+
+</html>

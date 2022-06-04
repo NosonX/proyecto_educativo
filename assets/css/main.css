@@ -1,0 +1,27 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    min-height: 100vh;
+    font-family: 'Roboto', sans-serif;
+}
+
+aside, main {
+    padding: 2em;
+}
+
+aside {
+    background-color: #00315F;
+    width: 300px;
+    height: 100vh;
+    color: white;
+    border-top-right-radius: 100px;
+}
+
+.section-header {
+    color: red!important;
+}
+
+main {
+    flex-grow: 1;
+}
