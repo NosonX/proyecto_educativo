@@ -1,85 +1,288 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MATAPP</title>
-    <link rel="stylesheet" href="assets/css/main.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;900&display=swap" rel="stylesheet">
-</head>
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;900&display=swap"
+      rel="stylesheet"/>
+  </head>
 
-<body>
+  <body>
     <aside>
-        <h1 class="brand"> <span class="font-light">MAT</span>APP</h1>
+      <h1 class="brand"><span class="font-light">MAT</span>APP</h1>
 
-        <div class="filter-group">
-            <h3>Tipos de ejercicios</h3>
-            <form>
-                <div class="checkbox">
-                    <input name="sumas" type="checkbox" />
-                    <label for="sumas">Sumas</label>
-                </div>
-                <div class="checkbox">
-                    <input name="sumas" type="checkbox" />
-                    <label for="sumas">Restas</label>
-                </div>
-                <div class="checkbox">
-                    <input name="sumas" type="checkbox" />
-                    <label for="sumas">Multiplicaciones</label>
-                </div>
-                <div class="checkbox">
-                    <input name="sumas" type="checkbox" />
-                    <label for="sumas">Divisiones</label>
-                </div>
-            </form>
-        </div>
+      <div class="filter-group">
+        <h3>Tipos de ejercicios</h3>
+        <form>
+          <div class="checkbox">
+            <input name="sumas" type="checkbox" />
+            <label for="sumas">Sumas</label>
+          </div>
+          <div class="checkbox">
+            <input name="sumas" type="checkbox" />
+            <label for="sumas">Restas</label>
+          </div>
+          <div class="checkbox">
+            <input name="sumas" type="checkbox" />
+            <label for="sumas">Multiplicaciones</label>
+          </div>
+          <div class="checkbox">
+            <input name="sumas" type="checkbox" />
+            <label for="sumas">Divisiones</label>
+          </div>
+        </form>
+      </div>
 
-        <div class="filter-group">
-            <h3>Configuraciones</h3>
-            <form>
-                <div class="field">
-                    <label for="nEjercicios">Nº de ejercicios</label>
-                    <input name="nEjercicios" type="number" />
-                </div>
-                <div class="field">
-                    <label for="min">Nº min</label>
-                    <input name="min" type="number" />
-                </div>
-                <div class="field">
-                    <label for="max">Nº max</label>
-                    <input name="max" type="number" />
-                </div>
-            </form>
-        </div>
+      <div class="filter-group">
+        <h3>Configuraciones</h3>
+        <form>
+          <div class="field">
+            <label for="nEjercicios">Nº de ejercicios</label>
+            <input name="nEjercicios" type="number"/>
+          </div>
+          <div class="field">
+            <label for="min">Nº min</label>
+            <input name="min" type="number"/>
+          </div>
+          <div class="field">
+            <label for="max">Nº max</label>
+            <input name="max" type="number"/>
+          </div>
+        </form>
+      </div>
 
-        <button class="submit">Generar prueba</button>
+      <button class="submit">Generar prueba</button>
     </aside>
 
     <main>
-        <section>
-            <div class="section-header">
-                <h2>Sumas</h2>
-                <span>+</span>
-                <hr>
-            </div>
+      <section>
+        <div class="section-header">
+          <h2>Sumas</h2>
+          
+          
+        </div>
+        <article>
+          <div class="excercise">
+            <hr class="linea"/>
+            <span> a) </span>
+            <span> 10 +</span>
+            <span class="numberN">
+              <input type="number"/>
+            </span>
+            <span>= 20</span>
+
+            <span>  &nbsp &nbsp b) </span>
+            <span> 20 +</span>
+            <span class="numberN">
+              <input type="number"/>
+            </span>
+            <span>= 60</span>
+
+            <span> &nbsp &nbsp  c) </span>
+            <span class="numberN">
+              <input type="number"/>
+            </span>
+            <span> + 30</span>
+            <span>= 65</span>
+            <br/>
+            <br/>
+            <span>d)</span>
+            <span>05 +</span>
+            <span class="numberN">
+                <input type="number"/>
+              </span>
+              <span>=30</span>
+              <span> &nbsp &nbsp &nbspe) </span>
+              <span>40 +</span>
+              
+              <span class="numberN">
+                <input type="number"/>
+                <span>= 70</span>
+              </span>
+
+              <span> &nbsp &nbsp  f) </span>
+            <span class="numberN">
+              <input type="number"/>
+            </span>
+            <span> + 50</span>
+            <span>= 60</span>
+          </div>
+
+
+        </article>
+        <div class="section-header2">
+          <h2>Restas</h2>
+          
+          <article>
+           
+            <div class="resta">
+           <hr class="linea2"/>
+              <span> a) </span>
+              <span> 15 -</span>
+              <span class="numberN">
+                <input type="number"/>
+              </span>
+              <span>= 20</span>
+  
+              <span>  &nbsp &nbsp b) </span>
+              <span> 20 -</span>
+              <span class="numberN">
+                <input type="number"/>
+              </span>
+              <span>= 80</span>
+  
+              <span> &nbsp &nbsp  c) </span>
+              <span class="numberN">
+                <input type="number"/>
+              </span>
+              <span> - 30</span>
+              <span>= 90</span>
+              <br/>
+              <br/>
+              <span>d)</span>
+              <span>05 -</span>
+              <span class="numberN">
+                  <input type="number"/>
+                </span>
+                <span>= 30</span>
+                <span> &nbsp &nbsp&nbspd) </span>
+                <span>40 -</span>
+                
+                <span class="numberN">
+                  <input type="number"/>
+                  <span>= 60</span>
+                </span>
+  
+                <span> &nbsp &nbsp  e) </span>
+              <span class="numberN">
+                <input type="number"/>
+              </span>
+              <span> - 35</span>
+              <span>= 60</span>
+
+
+        </div>
+
+    </article>
+
+        <div class="section-header3">
+            <h2>Multiplicaciones</h2>
+            
             <article>
-                <div class="excercise">
-                    <span>10</span>
-                    <span>x</span>
-                    <span>
-                        <input type="number">
-                    </span>
-                    <span>= 20</span>
-                </div>
-            </article>
-        </section>
-        <button>Calificar</button>
+             
+              <div class="multi">
+             <hr class="linea3"/>
+                <span> a) </span>
+                <span> 15 *</span>
+                <span class="numberN">
+                  <input type="number"/>
+                </span>
+                <span>= 90</span>
+    
+                <span>  &nbsp &nbsp b) </span>
+                <span> 10 *</span>
+                <span class="numberN">
+                  <input type="number"/>
+                </span>
+                <span>= 50</span>
+    
+                <span> &nbsp &nbsp  c) </span>
+                <span class="numberN">
+                  <input type="number"/>
+                </span>
+                <span> * 20</span>
+                <span>= 85</span>
+                <br/>
+                <br/>
+                <span>d)</span>
+                <span>05 *</span>
+                <span class="numberN">
+                    <input type="number"/>
+                  </span>
+                  <span>= 70</span>
+                  <span> &nbsp &nbsp&nbspd) </span>
+                  <span>30 *</span>
+                  
+                  <span class="numberN">
+                    <input type="number"/>
+                    <span>= 80</span>
+                  </span>
+    
+                  <span> &nbsp &nbsp  e) </span>
+                <span class="numberN">
+                  <input type="number"/>
+                </span>
+                <span> * 35</span>
+                <span>= 60</span>
+  
+  
+          </div>
+
+        </article>
+
+          <div class="section-header4">
+            <h2>Divisiones</h2>
+            
+            <article>
+             
+              <div class="division">
+             <hr class="linea3"/>
+                <span> a) </span>
+                <span> 15 /</span>
+                <span class="numberN">
+                  <input type="number"/>
+                </span>
+                <span>= 90</span>
+    
+                <span>  &nbsp &nbsp b) </span>
+                <span> 10 /</span>
+                <span class="numberN">
+                  <input type="number"/>
+                </span>
+                <span>= 50</span>
+    
+                <span> &nbsp &nbsp  c) </span>
+                <span class="numberN">
+                  <input type="number"/>
+                </span>
+                <span> / 20</span>
+                <span>= 85</span>
+                <br/>
+                <br/>
+                <span>d)</span>
+                <span>05 /</span>
+                <span class="numberN">
+                    <input type="number"/>
+                  </span>
+                  <span>= 70</span>
+                  <span> &nbsp &nbsp&nbspd) </span>
+                  <span>30 /</span>
+                  
+                  <span class="numberN">
+                    <input type="number"/>
+                    <span>= 80</span>
+                  </span>
+    
+                  <span> &nbsp &nbsp  e) </span>
+                <span class="numberN">
+                  <input type="number"/>
+                </span>
+                <span> / 35</span>
+                <span>= 60</span>
+  
+  
+          </div>
+        </article>
+      </section>
+
+      <button class="calificarRe">Calificar</button>
     </main>
     <script src="assets/js/main.js" type="text/javascript"></script>
-</body>
-
+  </body>
 </html>

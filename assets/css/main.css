@@ -24,9 +24,175 @@ aside {
     position: relative;
 }
 
-.section-header {
-    color: red!important;
+
+/* dannier  inicio*/
+.section-header h2 {
+    position: absolute;
+    width: 111px;
+    height: 30px;
+    left:394px;
+    top: 65px;
+    font-family: 'Roboto', normal;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 42px;
+    text-align: center;
+    color: #00315F !important;
+  
+
 }
+
+.section-header2 h2{
+    position: absolute;
+    width: 225px;
+    height: 42px;
+    left:340px;
+    top: 210px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 42px;
+    text-align: center;
+    color: #00315F !important;
+
+}
+.section-header3 h2{
+    position: absolute;
+    width: 225px;
+    height: 42px;
+    left:380px;
+    top: 350px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 42px;
+    text-align: center;
+    color: #00315F !important;
+
+}
+.section-header4 h2{
+    position: absolute;
+    width: 225px;
+    height: 42px;
+    left:360px;
+    top: 480px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 42px;
+    text-align: center;
+    color: #00315F !important;
+
+}
+
+
+
+
+
+.linea {
+    position: absolute;
+    width: 1090px;
+    height: 0px;
+    left:35px;
+    top: -20px;
+    border: 1px solid #D9D9D9;
+   
+
+}
+
+
+.linea2 {
+    position: absolute;
+    width: 1090px;
+    height: 0px;
+    left:35px;
+    top: -18px;
+    border: 1px solid #D9D9D9;
+
+}
+
+
+
+.linea3 {
+    position: absolute;
+    width: 1090px;
+    height: 0px;
+    left:35px;
+    top: -20px;
+    border: 1px solid #D9D9D9;
+
+}
+
+
+
+.linea4 {
+    position: absolute;
+    width: 1090px;
+    height: 0px;
+    left:35px;
+    top: -10px;
+    border: 1px solid #D9D9D9;
+
+}
+.excercise
+{
+  position: absolute;  
+  width: 1036px;
+  height: 302px;
+  left: 383px;
+  top: 140px;
+}
+
+
+.resta
+{
+  position: absolute;  
+  width: 1036px;
+  height: 302px;
+  left: 383px;
+  top: 285px;
+}
+
+
+
+
+.multi
+{
+  position: absolute;  
+  width: 1036px;
+  height: 302px;
+  left: 383px;
+  top: 420px;
+}
+
+
+
+.division
+{
+  position: absolute;  
+  width: 1036px;
+  height: 302px;
+  left: 383px;
+  top: 550px;
+}
+
+.calificarRe{
+    position: absolute;
+    width: 1235px;
+    height:35px;
+    left: 300px;
+    top: 620px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    
+}
+
+
+
+
+/* dannier  fin*/
 
 main {
     flex-grow: 1;
@@ -76,3 +242,5 @@ main {
     height: 36px;
     background-color: lime;
 }
+
+
