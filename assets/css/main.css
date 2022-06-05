@@ -23,6 +23,11 @@ h1 {
     font-weight: 900;
 }
 
+
+h2 {
+    color: var(--primary-color);
+}
+
 h1 span {
     font-weight: 300;
     opacity: 0.7;
@@ -54,6 +59,7 @@ main {
     max-height: calc(100vh - 50px);
     overflow-y: scroll;
     margin-bottom: 50px;
+    
 }
 
 aside section {
