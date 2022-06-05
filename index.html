@@ -46,18 +46,33 @@
             <h3>Configuración</h3>
 
             <div class="field field--number">
-                <label for="nEjercicios">Nº de Ejercicios</label>
-                <input name="nEjercicios" type="number" />
+                <label for="nExcersices">Nº de Ejercicios</label>
+
+                <div class="input--number">
+                    <button class="decrease">-</button>
+                    <input name="nExcersices" type="number" value="30" />
+                    <button class="increase">+</button>
+                </div>
             </div>
 
             <div class="field field--number">
-                <label for="nMax">Nº Max.</label>
-                <input name="nMax" type="number" />
+                <label for="min">Nº Max.</label>
+                
+                <div class="input--number">
+                    <button class="decrease">-</button>
+                    <input name="min" type="number" value="-100" />
+                    <button class="increase">+</button>
+                </div>
             </div>
 
             <div class="field field--number">
-                <label for="nMin">Nº Min.</label>
-                <input name="nMin" type="number" />
+                <label for="max">Nº Min.</label>
+                
+                <div class="input--number">
+                    <button class="decrease">-</button>
+                    <input name="max" type="number" value="100" />
+                    <button class="increase">+</button>
+                </div>
             </div>
         </section>
 

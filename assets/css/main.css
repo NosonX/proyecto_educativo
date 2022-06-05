@@ -1,8 +1,19 @@
+:root {
+    --primary-color: #00315f;
+    --secondary-color: #a4c549;
+    --white: #fefefe;
+    --primary-font: "Roboto", sans-serif;
+}
+
 /* General */
 body {
     margin: 0;
     display: flex;
-    font-family: 'Roboto', sans-serif;
+    font-family: var(--primary-font);
+}
+
+button {
+    cursor: pointer;
 }
 
 h1 {
@@ -15,14 +26,13 @@ h3 {
     font-weight: 300;
 }
 
-
 /* Layout */
 
 aside {
-    background-color: #00315F;
+    background-color: var(--primary-color);
     border-top-right-radius: 100px;
     box-sizing: border-box;
-    color: white;
+    color: var(--white);
     width: 300px;
     flex-shrink: 0;
     height: 100vh;
@@ -34,7 +44,6 @@ main {
     width: 100%;
 }
 
-
 /* Aside */
 
 aside .field {
@@ -44,20 +53,21 @@ aside .field {
 aside .field--number {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1em;
 }
 
 aside .field--number label {
     display: block;
-    width: 120px;
     font-weight: 300;
 }
 
 aside .field--number input {
-    width: 50px;
+    width: 28px;
 }
 
 .submit {
-    background-color: #A4C549;
+    background-color: var(--secondary-color);
     border-radius: 5px;
     border: none;
     width: calc(100% - (32px * 2));
@@ -65,4 +75,45 @@ aside .field--number input {
     position: absolute;
     left: 32px;
     bottom: 32px;
+}
+
+/* Fields */
+.input--number {
+    display: flex;
+    height: 32px;
+}
+
+.input--number input {
+    text-align: center;
+    border: none;
+}
+
+.input--number input::-webkit-outer-spin-button,
+.input--number input::-webkit-inner-spin-button,
+.input--number input[type=number]
+{
+    -webkit-appearance: none;
+    -moz-appearance: textfield;
+    margin: 0;
+}
+
+.input--number button {
+    border: none;
+    background-color: var(--secondary-color);
+    color: var(--white);
+    font-weight: 900;
+    font-size: 18px;
+    width: 20px;
+    flex-shrink: 0;
+    display: block;
+}
+
+.input--number button.decrease {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.input--number button.increase {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
