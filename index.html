@@ -16,48 +16,69 @@
 
 <body>
     <aside>
-        <h1>MATAPP</h1>
+        <h1>
+            <span>MATH</span>APP
+        </h1>
 
         <section>
             <h3>Tipos de ejercicios</h3>
 
-            <div class="field">
-                <input name="sumas" type="checkbox" />
-                <label for="sumas">Sumas</label>
-            </div>
+            <label class="field field--checkbox">
+                Sumas
+                <input type="checkbox" checked="checked">
+                <span class="checkmark"></span>
+            </label>
 
-            <div class="field">
-                <input name="restas" type="checkbox" />
-                <label for="restas">Restas</label>
-            </div>
+            <label class="field field--checkbox">
+                Restas
+                <input type="checkbox" checked="checked">
+                <span class="checkmark"></span>
+            </label>
 
-            <div class="field">
-                <input name="multiplicaciones" type="checkbox" />
-                <label for="multiplicaciones">Multiplaciones</label>
-            </div>
+            <label class="field field--checkbox">
+                Multiplicaciones
+                <input type="checkbox" checked="checked">
+                <span class="checkmark"></span>
+            </label>
 
-            <div class="field">
-                <input name="divisiones" type="checkbox" />
-                <label for="divisiones">Divisiones</label>
-            </div>
+            <label class="field field--checkbox">
+                Divisiones
+                <input type="checkbox" checked="checked">
+                <span class="checkmark"></span>
+            </label>
         </section>
 
         <section>
             <h3>Configuración</h3>
 
             <div class="field field--number">
-                <label for="nEjercicios">Nº de Ejercicios</label>
-                <input name="nEjercicios" type="number" />
+                <label for="nExcersices">Nº de Ejercicios</label>
+
+                <div class="input--number">
+                    <button class="decrease">-</button>
+                    <input name="nExcersices" type="number" value="30" />
+                    <button class="increase">+</button>
+                </div>
             </div>
 
             <div class="field field--number">
-                <label for="nMax">Nº Max.</label>
-                <input name="nMax" type="number" />
+                <label for="min">Nº Min.</label>
+                
+                <div class="input--number">
+                    <button class="decrease">-</button>
+                    <input name="min" type="number" value="-100" />
+                    <button class="increase">+</button>
+                </div>
             </div>
 
             <div class="field field--number">
-                <label for="nMin">Nº Min.</label>
-                <input name="nMin" type="number" />
+                <label for="max">Nº Max.</label>
+                
+                <div class="input--number">
+                    <button class="decrease">-</button>
+                    <input name="max" type="number" value="100" />
+                    <button class="increase">+</button>
+                </div>
             </div>
         </section>
 

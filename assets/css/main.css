@@ -1,13 +1,30 @@
+:root {
+    --primary-color: #00315f;
+    --secondary-color: #a4c549;
+    --white: #fefefe;
+    --primary-font: "Roboto", sans-serif;
+}
+
 /* General */
 body {
     margin: 0;
     display: flex;
-    font-family: 'Roboto', sans-serif;
+    font-family: var(--primary-font);
+}
+
+button {
+    cursor: pointer;
 }
 
 h1 {
     font-size: 48px;
     text-align: center;
+    font-weight: 900;
+}
+
+h1 span {
+    font-weight: 300;
+    opacity: 0.7;
 }
 
 h3 {
@@ -15,14 +32,13 @@ h3 {
     font-weight: 300;
 }
 
-
 /* Layout */
 
 aside {
-    background-color: #00315F;
+    background-color: var(--primary-color);
     border-top-right-radius: 100px;
     box-sizing: border-box;
-    color: white;
+    color: var(--white);
     width: 300px;
     flex-shrink: 0;
     height: 100vh;
@@ -34,6 +50,9 @@ main {
     width: 100%;
 }
 
+aside section {
+    margin-top: 3em;
+}
 
 /* Aside */
 
@@ -44,25 +63,123 @@ aside .field {
 aside .field--number {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1em;
 }
 
 aside .field--number label {
     display: block;
-    width: 120px;
     font-weight: 300;
 }
 
 aside .field--number input {
-    width: 50px;
+    width: 28px;
 }
 
 .submit {
-    background-color: #A4C549;
+    background-color: var(--secondary-color);
     border-radius: 5px;
     border: none;
+    color: var(--white);
     width: calc(100% - (32px * 2));
     height: 36px;
     position: absolute;
     left: 32px;
     bottom: 32px;
+}
+
+/* Fields */
+.input--number {
+    display: flex;
+    height: 32px;
+}
+
+.input--number input {
+    text-align: center;
+    border: none;
+}
+
+.input--number input::-webkit-outer-spin-button,
+.input--number input::-webkit-inner-spin-button,
+.input--number input[type=number] {
+    -webkit-appearance: none;
+    -moz-appearance: textfield;
+    margin: 0;
+}
+
+.input--number button {
+    border: none;
+    background-color: var(--secondary-color);
+    color: var(--white);
+    font-weight: 900;
+    font-size: 18px;
+    width: 20px;
+    flex-shrink: 0;
+    display: block;
+}
+
+.input--number button.decrease {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.input--number button.increase {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+
+.field--checkbox {
+    display: flex;
+    font-weight: 300;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    position: relative;
+    align-items: center;
+    cursor: pointer;
+    margin-bottom: 1em;
+}
+
+.field--checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.field--checkbox .checkmark {
+    background-color: var(--white);
+    height: 18px;
+    width: 18px;
+    border-radius: 5px;
+    margin-right: .5em;
+}
+
+.field--checkbox input:checked~.checkmark {
+    background-color: var(--secondary-color);
+    cursor: pointer;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.field--checkbox input:checked~.checkmark:after {
+    display: block;
+    position: relative;
+}
+
+.field--checkbox .checkmark:after {
+    width: 3px;
+    height: 8px;
+    border: solid var(--white);
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    top: 2px;
+    left: 6px;
 }
