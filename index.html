@@ -2,128 +2,488 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proyecto 1 - Página educativa</title>
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;900&display=swap" rel="stylesheet">
-   
-    <link rel="stylesheet" href="assets/css/main.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proyecto 1 - Página educativa</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/main.css">
 </head>
 
 <body>
-    <aside>
-        <h1>
-            <span>MATH</span>APP
-        </h1>
+  <aside>
+    <h1>
+      <span>MATH</span>APP
+    </h1>
 
-        <section>
-            <h3>Tipos de ejercicios</h3>
+    <section>
+      <h3>Tipos de ejercicios</h3>
 
-            <label class="field field--checkbox">
-                Sumas
-                <input type="checkbox" checked="checked">
-                <span class="checkmark"></span>
-            </label>
+      <label class="field field--checkbox">
+        Sumas
+        <input type="checkbox" checked="checked">
+        <span class="checkmark"></span>
+      </label>
 
-            <label class="field field--checkbox">
-                Restas
-                <input type="checkbox" checked="checked">
-                <span class="checkmark"></span>
-            </label>
+      <label class="field field--checkbox">
+        Restas
+        <input type="checkbox" checked="checked">
+        <span class="checkmark"></span>
+      </label>
 
-            <label class="field field--checkbox">
-                Multiplicaciones
-                <input type="checkbox" checked="checked">
-                <span class="checkmark"></span>
-            </label>
+      <label class="field field--checkbox">
+        Multiplicaciones
+        <input type="checkbox" checked="checked">
+        <span class="checkmark"></span>
+      </label>
 
-            <label class="field field--checkbox">
-                Divisiones
-                <input type="checkbox" checked="checked">
-                <span class="checkmark"></span>
-            </label>
-        </section>
+      <label class="field field--checkbox">
+        Divisiones
+        <input type="checkbox" checked="checked">
+        <span class="checkmark"></span>
+      </label>
+    </section>
 
-        <section>
-            <h3>Configuración</h3>
+    <section>
+      <h3>Configuración</h3>
 
-            <div class="field field--number">
-                <label for="nExcersices">Nº de Ejercicios</label>
+      <div class="field field--number">
+        <label for="nExcersices">Nº de Ejercicios</label>
 
-                <div class="input--number">
-                    <button class="decrease">-</button>
-                    <input name="nExcersices" type="number" value="30" />
-                    <button class="increase">+</button>
-                </div>
-            </div>
+        <div class="input--number">
+          <button class="decrease">-</button>
+          <input name="nExcersices" type="number" value="30" />
+          <button class="increase">+</button>
+        </div>
+      </div>
 
-            <div class="field field--number">
-                <label for="min">Nº Min.</label>
-                
-                <div class="input--number">
-                    <button class="decrease">-</button>
-                    <input name="min" type="number" value="-100" />
-                    <button class="increase">+</button>
-                </div>
-            </div>
+      <div class="field field--number">
+        <label for="min">Nº Min.</label>
 
-            <div class="field field--number">
-                <label for="max">Nº Max.</label>
-                
-                <div class="input--number">
-                    <button class="decrease">-</button>
-                    <input name="max" type="number" value="100" />
-                    <button class="increase">+</button>
-                </div>
-            </div>
-        </section>
+        <div class="input--number">
+          <button class="decrease">-</button>
+          <input name="min" type="number" value="-100" />
+          <button class="increase">+</button>
+        </div>
+      </div>
 
-        <button class="submit" type="submit">Generar Prueba</button>
-    </aside>
+      <div class="field field--number">
+        <label for="max">Nº Max.</label>
 
-    <main>
-        <section>
-            <div>
-                <h2>Sumas</h2>
-                <span>+</span>
-                <hr />
-            </div>
+        <div class="input--number">
+          <button class="decrease">-</button>
+          <input name="max" type="number" value="100" />
+          <button class="increase">+</button>
+        </div>
+      </div>
+    </section>
 
-            <article>
+    <button class="submit" type="submit">Generar Prueba</button>
+  </aside>
 
-                <div>
-                    <span>10 +</span>
-                    <input type="number" />
-                    <span> = 20</span>
-                </div>
+  <main>
+    <section>
+      <div class="section-header">
+        <h2>Sumas</h2>
+        <span>+</span>
+      </div>
 
-                <div>
-                    <span>10 +</span>
-                    <input type="number" />
-                    <span> = 20</span>
-                </div>
+      <hr />
 
-                <div>
-                    <span>10 +</span>
-                    <input type="number" />
-                    <span> = 20</span>
-                </div>
+      <div class="excercise">
+        <span class="excersiceNumber">a)</span>
+        <p>
+          10 +
+          <input type="number" />
+          = 21
+        </p>
+      </div>
 
-                <div>
-                    <span>10 +</span>
-                    <input type="number" />
-                    <span> = 20</span>
-                </div>
+      <div class="excercise">
+        <span class="excersiceNumber">b)</span>
+        <p>
+          10 +
+          <input type="number" />
+          = 21
+        </p>
+      </div>
 
-            </article>
+      <div class="excercise">
+        <span class="excersiceNumber">c)</span>
+        <p>
+          10 +
+          <input type="number" />
+          = 21
+        </p>
+      </div>
 
-            <button>Calificar</button>
-        </section>
-    </main>
+      <div class="excercise">
+        <span class="excersiceNumber">d)</span>
+        <p>
+          10 +
+          <input type="number" />
+          = 21
+        </p>
+      </div>
+
+      <div class="excercise">
+        <span class="excersiceNumber">e)</span>
+        <p>
+          10 +
+          <input type="number" />
+          = 21
+        </p>
+      </div>
+
+      <div class="excercise">
+        <span class="excersiceNumber">f)</span>
+        <p>
+          10 +
+          <input type="number" />
+          = 21
+        </p>
+      </div>
+
+      <div class="excercise">
+        <span class="excersiceNumber">g)</span>
+        <p>
+          10 +
+          <input type="number" />
+          = 21
+        </p>
+      </div>
+
+      <div class="excercise">
+        <span class="excersiceNumber">h)</span>
+        <p>
+          10 +
+          <input type="number" />
+          = 21
+        </p>
+      </div>
+
+      <div class="excercise">
+        <span class="excersiceNumber">i)</span>
+        <p>
+          10 +
+          <input type="number" />
+          = 21
+        </p>
+      </div>
+
+      <div class="excercise">
+        <span class="excersiceNumber">j)</span>
+        <p>
+          10 +
+          <input type="number" />
+          = 21
+        </p>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-header">
+        <h2>Restas</h2>
+        <span>+</span>
+      </div>
+
+      <hr />
+
+      <div class="excercise">
+        <span class="excersiceNumber">a)</span>
+        <p>
+          10 -
+          <input type="number" />
+          = 21
+        </p>
+      </div>
+
+      <div class="excercise">
+        <span class="excersiceNumber">b)</span>
+        <p>
+          10 -
+          <input type="number" />
+          = 21
+        </p>
+      </div>
+
+      <div class="excercise">
+        <span class="excersiceNumber">c)</span>
+        <p>
+          10 -
+          <input type="number" />
+          = 21
+        </p>
+      </div>
+
+      <div class="excercise">
+        <span class="excersiceNumber">d)</span>
+        <p>
+          10 -
+          <input type="number" />
+          = 21
+        </p>
+      </div>
+
+      <div class="excercise">
+        <span class="excersiceNumber">e)</span>
+        <p>
+          10 -
+          <input type="number" />
+          = 21
+        </p>
+      </div>
+
+      <div class="excercise">
+        <span class="excersiceNumber">f)</span>
+        <p>
+          10 -
+          <input type="number" />
+          = 21
+        </p>
+      </div>
+
+      <div class="excercise">
+        <span class="excersiceNumber">g)</span>
+        <p>
+          10 -
+          <input type="number" />
+          = 21
+        </p>
+      </div>
+
+      <div class="excercise">
+        <span class="excersiceNumber">h)</span>
+        <p>
+          10 -
+          <input type="number" />
+          = 21
+        </p>
+      </div>
+
+      <div class="excercise">
+        <span class="excersiceNumber">i)</span>
+        <p>
+          10 -
+          <input type="number" />
+          = 21
+        </p>
+      </div>
+
+      <div class="excercise">
+        <span class="excersiceNumber">j)</span>
+        <p>
+          10 -
+          <input type="number" />
+          = 21
+        </p>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-header">
+        <h2>Multiplicaciones</h2>
+        <span>+</span>
+      </div>
+
+      <hr />
+
+      <div class="excercise">
+        <span class="excersiceNumber">a)</span>
+        <p>
+          10 *
+          <input type="number" />
+          = 21
+        </p>
+      </div>
+
+      <div class="excercise">
+        <span class="excersiceNumber">b)</span>
+        <p>
+          10 *
+          <input type="number" />
+          = 21
+        </p>
+      </div>
+
+      <div class="excercise">
+        <span class="excersiceNumber">c)</span>
+        <p>
+          10 *
+          <input type="number" />
+          = 21
+        </p>
+      </div>
+
+      <div class="excercise">
+        <span class="excersiceNumber">d)</span>
+        <p>
+          10 *
+          <input type="number" />
+          = 21
+        </p>
+      </div>
+
+      <div class="excercise">
+        <span class="excersiceNumber">e)</span>
+        <p>
+          10 *
+          <input type="number" />
+          = 21
+        </p>
+      </div>
+
+      <div class="excercise">
+        <span class="excersiceNumber">f)</span>
+        <p>
+          10 *
+          <input type="number" />
+          = 21
+        </p>
+      </div>
+
+      <div class="excercise">
+        <span class="excersiceNumber">g)</span>
+        <p>
+          10 *
+          <input type="number" />
+          = 21
+        </p>
+      </div>
+
+      <div class="excercise">
+        <span class="excersiceNumber">h)</span>
+        <p>
+          10 *
+          <input type="number" />
+          = 21
+        </p>
+      </div>
+
+      <div class="excercise">
+        <span class="excersiceNumber">i)</span>
+        <p>
+          10 *
+          <input type="number" />
+          = 21
+        </p>
+      </div>
+
+      <div class="excercise">
+        <span class="excersiceNumber">j)</span>
+        <p>
+          10 *
+          <input type="number" />
+          = 21
+        </p>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-header">
+        <h2>Divisiones</h2>
+        <span>+</span>
+      </div>
+
+      <hr />
+
+      <div class="excercise">
+        <span class="excersiceNumber">a)</span>
+        <p>
+          10 /
+          <input type="number" />
+          = 21
+        </p>
+      </div>
+
+      <div class="excercise">
+        <span class="excersiceNumber">b)</span>
+        <p>
+          10 /
+          <input type="number" />
+          = 21
+        </p>
+      </div>
+
+      <div class="excercise">
+        <span class="excersiceNumber">c)</span>
+        <p>
+          10 /
+          <input type="number" />
+          = 21
+        </p>
+      </div>
+
+      <div class="excercise">
+        <span class="excersiceNumber">d)</span>
+        <p>
+          10 /
+          <input type="number" />
+          = 21
+        </p>
+      </div>
+
+      <div class="excercise">
+        <span class="excersiceNumber">e)</span>
+        <p>
+          10 /
+          <input type="number" />
+          = 21
+        </p>
+      </div>
+
+      <div class="excercise">
+        <span class="excersiceNumber">f)</span>
+        <p>
+          10 /
+          <input type="number" />
+          = 21
+        </p>
+      </div>
+
+      <div class="excercise">
+        <span class="excersiceNumber">g)</span>
+        <p>
+          10 /
+          <input type="number" />
+          = 21
+        </p>
+      </div>
+
+      <div class="excercise">
+        <span class="excersiceNumber">h)</span>
+        <p>
+          10 /
+          <input type="number" />
+          = 21
+        </p>
+      </div>
+
+      <div class="excercise">
+        <span class="excersiceNumber">i)</span>
+        <p>
+          10 /
+          <input type="number" />
+          = 21
+        </p>
+      </div>
+
+      <div class="excercise">
+        <span class="excersiceNumber">j)</span>
+        <p>
+          10 /
+          <input type="number" />
+          = 21
+        </p>
+      </div>
+    </section>
+
+    <button class="calificarBtn">Calificar</button>
+  </main>
 </body>
 
 </html>
