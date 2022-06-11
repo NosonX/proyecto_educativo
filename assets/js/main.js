@@ -11,13 +11,11 @@ window.onload = () => {
 
     decreaseButtons.forEach((button) => {
         button.addEventListener('click', (event) => changeInputValue(event, -1));
-    })
+    });
 
     increaseButtons.forEach((button) => {
         button.addEventListener('click', (event) => changeInputValue(event, 1));
     });
-
-
 
     // Collapsable panel
     const sectionHeaders = document.querySelectorAll('.section-header');
@@ -25,7 +23,7 @@ window.onload = () => {
     sectionHeaders.forEach(sectionHeader => {
         sectionHeader.addEventListener('click', (event) => {
             const excerciseContainer = event.target.parentNode.querySelector('.excersices-container');
-            
+
             if (excerciseContainer.classList.contains('close')) {
                 excerciseContainer.classList.remove('close');
             } else {
