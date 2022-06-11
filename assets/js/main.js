@@ -139,7 +139,6 @@ window.onload = () => {
     generateButton.addEventListener('click', generateTest);
 
     // Get results
-
     const getResults = () => {
         const results = [];
 
