@@ -6,6 +6,7 @@ main section .section-header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    cursor: pointer;
 }
 
 main section .section-header,
@@ -20,6 +21,15 @@ main section .section-header h2 {
     display: flex;
     flex-wrap: wrap;
     gap: 0.5em;
+    opacity: 1;
+    height: auto;
+    transition: all .3s ease-in;
+}
+
+.excersices-container.close {
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
 }
 
 .excercise {
