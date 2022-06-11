@@ -1,0 +1,78 @@
+main section {
+    margin-bottom: 50px;
+}
+
+main section .section-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+main section .section-header,
+main section .section-header h2 {
+    font-weight: 400;
+    font-size: 36px;
+    margin: 0;
+    padding: 0;
+}
+
+.excersices-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5em;
+    opacity: 1;
+    height: auto;
+    transition: all .3s ease-in;
+}
+
+.excersices-container.close {
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+}
+
+.excercise {
+    width: calc(20% - 0.5em);
+    min-width: 190px;
+    height: 90px;
+    border-radius: 10px;
+    border: 1px solid var(--gray);
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 1em;
+    box-sizing: border-box;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.excercise input {
+    width: 50px;
+    height: 32px;
+    border-radius: 5px;
+    margin: 8px;
+}
+
+.excersiceNumber {
+    position: absolute;
+    top: 0.5em;
+    left: 0.5em;
+}
+
+.excercise p {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+}
+
+.calificarBtn {
+    display: block;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: calc(100vw - 300px);
+    height: 70px;
+    font-size: 36px;
+    border: none;
+}
