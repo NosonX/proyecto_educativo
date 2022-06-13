@@ -33,8 +33,8 @@ main section .section-header h2 {
 }
 
 .excercise {
-    width: calc(20% - 0.5em);
-    min-width: 190px;
+    width: calc(25% - 0.5em);
+    min-width: 250px;
     height: 90px;
     border-radius: 10px;
     border: 1px solid var(--gray);
