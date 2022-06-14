@@ -80,7 +80,7 @@ main section .section-header h2 {
 }
 /*iconos*/
 .iconos{
-    color:--secondary-color;
+    color:#A4C549;
     transform:rotate(180deg);
     -webkit-transform:rotate(180deg);
     -moz-transform:rotate(180deg);
