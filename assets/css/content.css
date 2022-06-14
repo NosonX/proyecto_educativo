@@ -26,15 +26,17 @@ main section .section-header h2 {
     transition: all .3s ease-in;
 }
 
+
 .excersices-container.close {
     height: 0;
     overflow: hidden;
     opacity: 0;
 }
 
+
 .excercise {
-    width: calc(20% - 0.5em);
-    min-width: 190px;
+    width: calc(25% - 0.5em);
+    min-width: 250px;
     height: 90px;
     border-radius: 10px;
     border: 1px solid var(--gray);
@@ -75,4 +77,24 @@ main section .section-header h2 {
     height: 70px;
     font-size: 36px;
     border: none;
+}
+/*iconos*/
+.iconos{
+    color:--secondary-color;
+    transform:rotate(180deg);
+    -webkit-transform:rotate(180deg);
+    -moz-transform:rotate(180deg);
+    -ms-transform:rotate(180deg);
+    -o-transform:rotate(180deg);
+  
+}
+
+.iconos.close{
+    transform:none;
+    -webkit-transform:none;
+    -moz-transform:none;
+    -ms-transform:none;
+    -o-transform:none;
+ 
+    
 }

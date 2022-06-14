@@ -12,8 +12,14 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;900&display=swap" rel="stylesheet">
 
+<!-- icons -->
+
+<link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-straight/css/uicons-regular-straight.css'>
+
   <!-- Styles -->
   <link rel="stylesheet" href="assets/css/main.css">
+
+   
 </head>
 
 <body>
@@ -27,25 +33,25 @@
 
       <label class="field field--checkbox">
         Sumas
-        <input type="checkbox" checked="checked">
+        <input type="checkbox" checked="checked" name="sumas">
         <span class="checkmark"></span>
       </label>
 
       <label class="field field--checkbox">
         Restas
-        <input type="checkbox" checked="checked">
+        <input type="checkbox" checked="checked" name="restas">
         <span class="checkmark"></span>
       </label>
 
       <label class="field field--checkbox">
         Multiplicaciones
-        <input type="checkbox" checked="checked">
+        <input type="checkbox" checked="checked" name="multiplicaciones">
         <span class="checkmark"></span>
       </label>
 
       <label class="field field--checkbox">
         Divisiones
-        <input type="checkbox" checked="checked">
+        <input type="checkbox" checked="checked" name="divisiones">
         <span class="checkmark"></span>
       </label>
     </section>
@@ -84,339 +90,55 @@
       </div>
     </section>
 
-    <button class="submit" type="submit">Generar Prueba</button>
+    <button id="generateTest" class="submit" type="submit">Generar Prueba</button>
   </aside>
 
   <main>
-    <section>
+    <section id="sumas" class="hide">
       <div class="section-header">
         <h2>Sumas</h2>
-        <span>+</span>
+     <span class="iconos"><i class="fi fi-rs-angle-small-down"></i></span>
       </div>
 
       <hr />
 
       <div class="excersices-container">
-        <article class="excercise">
-          <span class="excersiceNumber">a)</span>
-          <p>
-            10 +
-            <input type="number" />
-            = 21
-          </p>
-        </article>
-
-        <article class="excercise">
-          <span class="excersiceNumber">a)</span>
-          <p>
-            10 +
-            <input type="number" />
-            = 21
-          </p>
-        </article>
-
-        <article class="excercise">
-          <span class="excersiceNumber">a)</span>
-          <p>
-            10 +
-            <input type="number" />
-            = 21
-          </p>
-        </article>
-
-        <article class="excercise">
-          <span class="excersiceNumber">a)</span>
-          <p>
-            10 +
-            <input type="number" />
-            = 21
-          </p>
-        </article>
-
-        <article class="excercise">
-          <span class="excersiceNumber">a)</span>
-          <p>
-            10 +
-            <input type="number" />
-            = 21
-          </p>
-        </article>
-
-        <article class="excercise">
-          <span class="excersiceNumber">a)</span>
-          <p>
-            10 +
-            <input type="number" />
-            = 21
-          </p>
-        </article>
-
-        <article class="excercise">
-          <span class="excersiceNumber">a)</span>
-          <p>
-            10 +
-            <input type="number" />
-            = 21
-          </p>
-        </article>
-        
-        <article class="excercise">
-          <span class="excersiceNumber">a)</span>
-          <p>
-            10 +
-            <input type="number" />
-            = 21
-          </p>
-        </article>
       </div>
     </section>
-    <section>
+
+    <section id="restas" class="hide">
       <div class="section-header">
-        <h2>Sumas</h2>
-        <span>+</span>
+        <h2>Restas</h2>
+        <span class="iconos"><i class="fi fi-rs-angle-small-down"></i></span>
       </div>
 
       <hr />
 
-      <div class="excersices-container">
-        <article class="excercise">
-          <span class="excersiceNumber">a)</span>
-          <p>
-            10 +
-            <input type="number" />
-            = 21
-          </p>
-        </article>
-
-        <article class="excercise">
-          <span class="excersiceNumber">a)</span>
-          <p>
-            10 +
-            <input type="number" />
-            = 21
-          </p>
-        </article>
-
-        <article class="excercise">
-          <span class="excersiceNumber">a)</span>
-          <p>
-            10 +
-            <input type="number" />
-            = 21
-          </p>
-        </article>
-
-        <article class="excercise">
-          <span class="excersiceNumber">a)</span>
-          <p>
-            10 +
-            <input type="number" />
-            = 21
-          </p>
-        </article>
-
-        <article class="excercise">
-          <span class="excersiceNumber">a)</span>
-          <p>
-            10 +
-            <input type="number" />
-            = 21
-          </p>
-        </article>
-
-        <article class="excercise">
-          <span class="excersiceNumber">a)</span>
-          <p>
-            10 +
-            <input type="number" />
-            = 21
-          </p>
-        </article>
-
-        <article class="excercise">
-          <span class="excersiceNumber">a)</span>
-          <p>
-            10 +
-            <input type="number" />
-            = 21
-          </p>
-        </article>
-        
-        <article class="excercise">
-          <span class="excersiceNumber">a)</span>
-          <p>
-            10 +
-            <input type="number" />
-            = 21
-          </p>
-        </article>
-      </div>
+      <div class="excersices-container"></div>
     </section>
-    <section>
+
+    <section id="multiplicaciones" class="hide">
       <div class="section-header">
-        <h2>Sumas</h2>
-        <span>+</span>
+        <h2>Multiplicaciones</h2>
+        <span class="iconos"><i class="fi fi-rs-angle-small-down"></i></span>
       </div>
 
       <hr />
 
-      <div class="excersices-container">
-        <article class="excercise">
-          <span class="excersiceNumber">a)</span>
-          <p>
-            10 +
-            <input type="number" />
-            = 21
-          </p>
-        </article>
-
-        <article class="excercise">
-          <span class="excersiceNumber">a)</span>
-          <p>
-            10 +
-            <input type="number" />
-            = 21
-          </p>
-        </article>
-
-        <article class="excercise">
-          <span class="excersiceNumber">a)</span>
-          <p>
-            10 +
-            <input type="number" />
-            = 21
-          </p>
-        </article>
-
-        <article class="excercise">
-          <span class="excersiceNumber">a)</span>
-          <p>
-            10 +
-            <input type="number" />
-            = 21
-          </p>
-        </article>
-
-        <article class="excercise">
-          <span class="excersiceNumber">a)</span>
-          <p>
-            10 +
-            <input type="number" />
-            = 21
-          </p>
-        </article>
-
-        <article class="excercise">
-          <span class="excersiceNumber">a)</span>
-          <p>
-            10 +
-            <input type="number" />
-            = 21
-          </p>
-        </article>
-
-        <article class="excercise">
-          <span class="excersiceNumber">a)</span>
-          <p>
-            10 +
-            <input type="number" />
-            = 21
-          </p>
-        </article>
-        
-        <article class="excercise">
-          <span class="excersiceNumber">a)</span>
-          <p>
-            10 +
-            <input type="number" />
-            = 21
-          </p>
-        </article>
-      </div>
+      <div class="excersices-container"></div>
     </section>
-    <section>
+
+    <section id="divisiones" class="hide">
       <div class="section-header">
-        <h2>Sumas</h2>
-        <span>+</span>
+        <h2>Divisiones</h2>
+        <span class="iconos"><i class="fi fi-rs-angle-small-down"></i></span>
       </div>
 
       <hr />
 
-      <div class="excersices-container">
-        <article class="excercise">
-          <span class="excersiceNumber">a)</span>
-          <p>
-            10 +
-            <input type="number" />
-            = 21
-          </p>
-        </article>
-
-        <article class="excercise">
-          <span class="excersiceNumber">a)</span>
-          <p>
-            10 +
-            <input type="number" />
-            = 21
-          </p>
-        </article>
-
-        <article class="excercise">
-          <span class="excersiceNumber">a)</span>
-          <p>
-            10 +
-            <input type="number" />
-            = 21
-          </p>
-        </article>
-
-        <article class="excercise">
-          <span class="excersiceNumber">a)</span>
-          <p>
-            10 +
-            <input type="number" />
-            = 21
-          </p>
-        </article>
-
-        <article class="excercise">
-          <span class="excersiceNumber">a)</span>
-          <p>
-            10 +
-            <input type="number" />
-            = 21
-          </p>
-        </article>
-
-        <article class="excercise">
-          <span class="excersiceNumber">a)</span>
-          <p>
-            10 +
-            <input type="number" />
-            = 21
-          </p>
-        </article>
-
-        <article class="excercise">
-          <span class="excersiceNumber">a)</span>
-          <p>
-            10 +
-            <input type="number" />
-            = 21
-          </p>
-        </article>
-        
-        <article class="excercise">
-          <span class="excersiceNumber">a)</span>
-          <p>
-            10 +
-            <input type="number" />
-            = 21
-          </p>
-        </article>
-      </div>
+      <div class="excersices-container"></div>
     </section>
-    <button class="calificarBtn">Calificar</button>
+    <button id="calificarBtn" class="calificarBtn hide">Calificar</button>
   </main>
 
   <script src="./assets/js/main.js"></script>
