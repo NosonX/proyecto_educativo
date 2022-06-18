@@ -84,7 +84,6 @@ window.onload = () => {
         const nExcercises = parseInt(document.querySelector('input[name="nExcersices"]').value);
         const excersices = document.getElementById(key).querySelector('.excersices-container');
         excersices.innerHTML = '';
-
         for (let index = 0; index < nExcercises; index++) {
             const sumas = getHtmlExcercise(index, key);
             excersices.appendChild(sumas);
@@ -110,7 +109,6 @@ window.onload = () => {
                 section:  document.getElementById('divisiones')
             }
         ];
-
 
         excersiceTypes.forEach(type => {
             if (type.checkbox.checked) {
