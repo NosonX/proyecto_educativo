@@ -23,11 +23,13 @@ window.onload = () => {
     sectionHeaders.forEach(sectionHeader => {
         sectionHeader.addEventListener('click', (event) => {
             const excerciseContainer = event.target.parentNode.querySelector('.excersices-container');
-
+            const iconos = event.target.parentNode.querySelector('.iconos');
             if (excerciseContainer.classList.contains('close')) {
                 excerciseContainer.classList.remove('close');
+                iconos.classList.remove('close');
             } else {
                 excerciseContainer.classList.add('close');
+                iconos.classList.add('close');
             }
         });
     });
@@ -161,7 +163,7 @@ window.onload = () => {
                 }
             }
         });
-
+ 
         const total = results.length;
         const good = results.filter(result => result).length;
         const wrong = results.filter(result => !result).length;
