@@ -61,10 +61,10 @@ window.onload = () => {
             : testKey == 'restas' ? '-'
             : testKey == 'multiplicaciones' ? 'x'
             : '/';
-        
+
         test[testKey].push(numbers);
 
-        const excerciseElement = document.createElement('article'); 
+        const excerciseElement = document.createElement('article');
         excerciseElement.classList.add('excercise');
         let content = `
                 <span class="excersiceNumber">${index + 1})</span>
@@ -73,7 +73,7 @@ window.onload = () => {
                     <span>${valueToComplete == 1 ? null : numbers[1]}</span>
                     <span>&nbsp= ${valueToComplete == 2 ? null : numbers[2]}</span>
                 </p>
-        `; 
+        `;
         content = content.replace('null', '<input type="number"/>');
         excerciseElement.innerHTML = content;
 
@@ -84,7 +84,6 @@ window.onload = () => {
         const nExcercises = parseInt(document.querySelector('input[name="nExcersices"]').value);
         const excersices = document.getElementById(key).querySelector('.excersices-container');
         excersices.innerHTML = '';
-        
         for (let index = 0; index < nExcercises; index++) {
             const sumas = getHtmlExcercise(index, key);
             excersices.appendChild(sumas);
@@ -111,7 +110,6 @@ window.onload = () => {
             }
         ];
 
-        
         excersiceTypes.forEach(type => {
             if (type.checkbox.checked) {
                 type.section.classList.remove('hide');
@@ -152,10 +150,12 @@ window.onload = () => {
                     const value = test[key][i][indexToCompare];
                     const isValid = answer === value;
                     results.push(isValid);
-    
+
                     if (isValid) {
                         answers[i].parentNode.parentNode.parentNode.classList.remove('wrong');
+                        answers[i].parentNode.parentNode.parentNode.classList.add('correct');
                     } else {
+                        answers[i].parentNode.parentNode.parentNode.classList.remove('correct');
                         answers[i].parentNode.parentNode.parentNode.classList.add('wrong');
                     }
                 }
@@ -174,7 +174,7 @@ window.onload = () => {
             Nota: ${nota}
         `);
     }
- 
+
     const getResultsButton = document.getElementById('calificarBtn');
     getResultsButton.addEventListener('click', getResults);
-} 
+}
