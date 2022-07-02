@@ -56,7 +56,7 @@ window.onload = () => {
             testKey == 'sumas' ? number1 + number2
             : testKey == 'restas' ? number1 - number2
             : testKey == 'multiplicaciones' ? number1 * number2
-            : number1 / number2,
+            : (number1 / number2).toFixed(2),
             valueToComplete
         ];
         const operationSymbol = testKey == 'sumas' ? '+'
@@ -132,11 +132,36 @@ window.onload = () => {
             divisiones: []
         };
         event.preventDefault();
+        document.getElementById('message').classList.remove('show');
         showSections();
     }
 
     const generateButton = document.getElementById('generateTest');
     generateButton.addEventListener('click', generateTest);
+
+    // close results
+    const closeResults = (resultModal) => {
+        const modalButton = resultModal.querySelector('button');
+
+        modalButton.addEventListener('click', (event) => {
+            event.preventDefault();
+            resultModal.classList.remove('show');
+        });
+
+        resultModal.classList.add('show');
+    }
+
+    // Show results
+    const showResults = (total, good, wrong, nota) => {
+        document.getElementById('total').innerText = total;
+        document.getElementById('correctas').innerText = good;
+        document.getElementById('incorrectas').innerText = wrong;
+        document.getElementById('nota').innerText = nota;
+        
+        const resultModal = document.getElementById('result');
+        resultModal.classList.add('show');
+        closeResults(resultModal);
+    }
 
     // Get results
     const getResults = () => {
@@ -169,12 +194,7 @@ window.onload = () => {
         const wrong = results.filter(result => !result).length;
         const nota = good * 100 / total
 
-        alert(`
-            Total: ${total}
-            Correctas: ${good}
-            Incorrectas: ${wrong}
-            Nota: ${nota}
-        `);
+        showResults(total, good, wrong, nota);        
     }
 
     const getResultsButton = document.getElementById('calificarBtn');
