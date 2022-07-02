@@ -19,12 +19,7 @@ aside .field--number input {
 }
 
 .submit {
-    background-color: var(--secondary-color);
-    border-radius: 5px;
-    border: none;
-    color: var(--white);
     width: calc(100% - (32px * 2));
-    height: 36px;
     position: absolute;
     left: 32px;
     bottom: 32px;

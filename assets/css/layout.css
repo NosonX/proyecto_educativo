@@ -17,6 +17,7 @@ main {
     max-height: calc(100vh - 50px);
     overflow-y: scroll;
     margin-bottom: 50px;
+    position: relative;
 }
 
 aside section {
