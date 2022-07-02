@@ -156,7 +156,7 @@ window.onload = () => {
         document.getElementById('total').innerText = total;
         document.getElementById('correctas').innerText = good;
         document.getElementById('incorrectas').innerText = wrong;
-        document.getElementById('nota').innerText = nota;
+        document.getElementById('nota').innerText = nota.toFixed(1);
         
         const resultModal = document.getElementById('result');
         resultModal.classList.add('show');
